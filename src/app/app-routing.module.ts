@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'ejercicio2',
+    loadChildren: () => import('./ejercicio2/ejercicio2.module').then( m => m.Ejercicio2PageModule)
+  },
+  {
+    path: 'ejercicio21',
+    loadChildren: () => import('./ejercicio21/ejercicio21.module').then( m => m.Ejercicio21PageModule)
+  },
 ];
 
 @NgModule({
